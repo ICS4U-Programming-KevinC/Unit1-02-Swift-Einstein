@@ -14,7 +14,7 @@ enum InputError: Error {
     case nonNumber
 }
 
-let speedOfLight = 299792458.0;
+let speedOfLight = 299792458.0
 
 do {
     // Get user input.
@@ -33,7 +33,7 @@ do {
         print("Please enter a non negative number.")
     } else {
         let energy = (massDouble * pow(speedOfLight, 2.0))
-        
+
         print("The energy of the mass you provided is " + String(round(energy * 1000) / 1000.0) + "J")
     }
 } catch InputError.nonNumber {
